@@ -1,0 +1,46 @@
+programa{
+	
+	
+inteiro num1
+inteiro num2
+inteiro resposta
+cadeia continuar
+logico interruptor = verdadeiro
+	
+	// é aqui que toda éssa merda acontece
+	funcao inicio(){
+		
+		
+		
+		enquanto(interruptor == verdadeiro ){
+			
+			escreva("\n _ + _ \n")
+			leia(num1)
+			escreva("\n"+num1+" + _ \n")
+			leia(num2)
+			
+			
+			resposta = num1+num2
+			escreva(num1+" + "+num2+" = "+resposta,"\n")
+			escreva("\n gostaria de somar de novo? \n")
+			
+			leia(continuar)
+			continue()
+
+		}	
+	}
+	
+	//decidir se essa merda continua ou não fds
+	funcao continue(){
+		se (continuar == "sim" ou continuar == "s"){
+			escreva("\n vamos la! \n")
+			escreva("––––––––––––––––––––––––––––––––")
+			inicio()
+		}
+		se(continuar =="nao" ou continuar == "n"){
+			escreva("\n \n Beleza, até a próxima :) ")
+			interruptor = falso
+			
+		}
+	}
+}
